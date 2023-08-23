@@ -1,6 +1,19 @@
-const a = [];
-const b = a;
+type Beanz = {
+    Cornbread?: string;
+}
 
-b.push(1);
+function doSomething(beanz: Beanz): boolean {
+    if (beanz.Cornbread) {
+        return true;
+    }
+    else {
+        return false;
+    }   
+}
 
-console.log(a); // [1]
+enum TSEnum {
+    Foo,
+    Bar,
+    Baz,
+}
+
