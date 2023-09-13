@@ -1,19 +1,11 @@
-type Beanz = {
-    Cornbread?: string;
+function foo() {
+    throw new Error("Goodbye, cruel world!");
 }
 
-function doSomething(beanz: Beanz): boolean {
-    if (beanz.Cornbread) {
-        return true;
-    }
-    else {
-        return false;
-    }   
+try {
+    foo();
+} catch (e) {
+        console.log("We had a problem, but we're fine now.", e);
 }
 
-enum TSEnum {
-    Foo,
-    Bar,
-    Baz,
-}
-
+console.log("great success()");
